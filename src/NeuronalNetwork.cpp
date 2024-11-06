@@ -21,7 +21,5 @@ void NeuronalNetwork::calculate()
         for (int i = 0; i < secondClass.size(); i++)
             isFit *= perceptron.adjustmentFunction(secondClass[i], 1);
 
-        if (count++ == 100)
-            break;
     } while (!isFit);
 }

@@ -25,8 +25,22 @@ int main()
         {0, 1, 1},
         {0, 0, 1}};
 
-    vector<float> weights = {1, 1, 1, 1};
-    float training_rate = 1;
+    vector<float> weights;
+    float training_rate;
+
+    // Lectura de datos
+    cout << "Set weights:\n"; 
+    float weight;
+    for (int i = 0; i < 4; i++)
+    {
+        cin >> weight;
+        weights.push_back(weight);
+    }
+
+    cout << "Set training rate:\n";
+    cin >> training_rate;
+    
+
 
     Perceptron perceptron(weights, training_rate);
 
@@ -43,6 +57,8 @@ int main()
     file.close();
 
     int result = std::system("python python/Grapher.py");
+
+    print(neuronal_network.getPerceptron().getWeights());
 
     return 0;
 }
