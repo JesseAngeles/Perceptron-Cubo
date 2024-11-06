@@ -30,7 +30,7 @@ x_grid, y_grid = np.meshgrid(x_vals, y_vals)
 weights = data["weights"]
 
 # Calcular z usando la ecuación del plano (Ax + By + Cz = D)
-z_grid = (weights[3] - weights[0]*x_grid - weights[1]*y_grid) / weights[2]
+z_grid = (-weights[3] - weights[0]*x_grid - weights[1]*y_grid) / weights[2]
 
 # Configurar la gráfica en 3D
 fig = plt.figure()

@@ -22,11 +22,6 @@ void NeuronalNetwork::calculate()
             isFit *= perceptron.adjustmentFunction(secondClass[i], 1);
 
         if (count++ == 100)
-        {
-            std::cout << "no encontro";
             break;
-        }
     } while (!isFit);
 }
-
-// -2x+2y+2z=1

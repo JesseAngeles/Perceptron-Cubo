@@ -1,9 +1,6 @@
 #ifndef PERCEPTRON_H
 #define PERCEPTRON_H
 
-// // delete
-#include <iostream>
-
 #include <vector>
 #include <cmath>
 
